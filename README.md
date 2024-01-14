@@ -1,17 +1,29 @@
-# TypeScript avanzado
+# refactor-project-adv-TS-course-exercises-1-3
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" width="200">
+## Ejercicio 1
 
-## Template para los ejercicios del curso
+Declara con `declare` (sin asignarles valores) las siguientes variables:
 
-Aquí tienes un template base para empezar los ejercicios. Ya tiene TS y ESLint instalados y configurados, recuerda que lo primero que tienes que hacer es `npm install`.
+- Una variable que almacena una edad
+- Una variable que almacena un número de teléfono
+- Una variable que almacena los datos de una persona (nombre, edad y teléfono)
 
-Éstos son los scripts que puedes lanzar:
+Declara con `declare` (sin escribir la implementación) las siguientes funciones:
 
-`npm run build`: compilará de TS a JS y lo guardará en la carpeta `dist`
+- Una función que recibe una edad y devuelve si es mayor de edad o no
+- Una función que recibe un número de teléfono y un array de números de teléfono, y devuelve en qué posición del array se encuentra el número recibido. Si no se encuentra, debe devolver `undefined`.
+- Una función que pide un nombre, una edad y un teléfono, y devuelve una persona con esos datos.
 
-`npm run build:dev`: hará lo mismo que el anterior, pero se quedará esperando cambios para volver a compilar
+Si necesitas crear alguna interfaz o tipo auxiliar, puedes hacerlo.
 
-`npm start`: ejecutará el archivo `index.js` de la carpeta `dist`
+## Ejercicio 2
 
-`npm run start:dev`: hará lo mismo que el anterior, pero se quedará esperando cambios para volver a ejecutar
+Declara con `declare` (sin escribir la implementación) una función llamada `plus` que reciba dos parámetros, que pueden ser o dos números o dos textos. Si recibe dos números, debe devolver la suma. Si recibe dos textos, debe devolverlos concatenados.
+
+Cuando la tengas, escribe la implementación de la función y quita el `declare`.
+
+## Ejercicio 3
+
+Declara con `declare` (sin escribir la implementación) una función genérica que tome dos valores de cualquier tipo y devuelva un array con esos valores intercambiados. Ejemplo: si le paso un `3` y un `'Hola'` debería devolver `['Hola', 3]`.
+
+Cuando la tengas, escribe la implementación de la función y quita el `declare`.
